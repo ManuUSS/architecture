@@ -73,3 +73,50 @@ img {
 .mt-5 {
     margin-top: 5rem;
 }
+
+/* Header */
+.header {
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 3rem 0;
+}
+
+@media ( min-width: 768px ){
+    .header {
+        padding: 2rem 0;
+    }
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 3rem);
+    justify-content: space-between;
+    color: var(--color-white);
+}
+
+@media ( min-width: 768px ){
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.site-name {
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+@media ( min-width: 768px ){
+    .site-name {
+        font-size: 5rem;
+    }
+}
+
+.site-name span {
+    font-weight: 900;
+}

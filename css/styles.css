@@ -235,13 +235,38 @@ img {
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+@media ( min-width: 768px ) {
+    .model {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
 
 .model.basic {
     background-image: url(../img/modelo_basico.jpg);
 }
+@media ( min-width: 768px ) {
+    .model.basic {
+        background-position: bottom right;
+    }
+    .basic .model-content {
+        grid-row: 2/3;
+        padding: 2rem 2rem 2rem 0;
+    }
+}
 
 .model.premier {
     background-image: url(../img/modelo_premier.jpg);
+}
+@media ( min-width: 768px ) {
+    .model.premier {
+        background-position: bottom left;
+    }
+
+    .premier .model-content {
+        grid-column: 2/3;
+        padding: 2rem 0 2rem 2rem;
+    }
 }
 
 .model.elite {

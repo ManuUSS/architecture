@@ -272,6 +272,15 @@ img {
 .model.elite {
     background-image: url(../img/modelo_elite.jpg);
 }
+@media ( min-width: 768px ) {
+    .model.elite {
+        background-position: top right;
+    }
+    .elite .model-content {
+        padding: 2rem 2rem 2rem 0;
+    }
+}
+
 
 .model-content {
     padding: 5rem;

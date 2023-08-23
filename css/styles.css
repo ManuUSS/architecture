@@ -334,3 +334,16 @@ img {
     object-fit: cover;
     height: 100%;
 }
+
+/* Footer */
+.footer {
+    height: 40rem;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
